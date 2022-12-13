@@ -1,0 +1,7 @@
+@startuml
+left to right direction
+User -left-> Teacher
+User -right-> Student
+foo -up-> dummyUp
+foo -down-> dummyDown
+@enduml

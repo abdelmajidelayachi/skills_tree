@@ -10,7 +10,7 @@ import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories(basePackages = {"com.abdelmajidelayachi.skills_tree"})
+@EnableJpaRepositories(basePackages = {"com.abdelmajidelayachi"})
 @EnableTransactionManagement
 public class JpaConfig {
 

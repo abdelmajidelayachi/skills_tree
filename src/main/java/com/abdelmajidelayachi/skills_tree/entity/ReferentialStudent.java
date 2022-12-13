@@ -4,13 +4,17 @@ import com.abdelmajidelayachi.skills_tree.util.Level;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "referential_student", schema = "public", catalog = "skills_tree")
-@IdClass(ReferentialPK.class)
+@Table(name = "referential_student_competence", schema = "public", catalog = "skills_tree")
+@IdClass(ReferentialStudentCompetencePK.class)
 public class ReferentialStudent {
 
     @Id
     @Column(name = "id_referential", nullable = false)
     private Long idReferential;
+
+    @Id
+    @Column(name = "id_student", nullable = false)
+    private Long idStudent;
 
     @Id
     @Column(name = "id_competence", nullable = false)
@@ -34,6 +38,14 @@ public class ReferentialStudent {
 
     public void setIdReferential(Long idReferential) {
         this.idReferential = idReferential;
+    }
+
+    public Long getIdStudent() {
+        return idStudent;
+    }
+
+    public void setIdStudent(Long idStudent) {
+        this.idStudent = idStudent;
     }
 
     public Long getIdCompetence() {

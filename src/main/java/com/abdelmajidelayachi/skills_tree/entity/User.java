@@ -1,4 +1,4 @@
-package com.abdelmajidelayachi.entity;
+package com.abdelmajidelayachi.skills_tree.entity;
 
 
 import jakarta.persistence.*;
@@ -9,7 +9,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     private Long id;
 
     @Basic
@@ -27,6 +27,7 @@ public class User {
     @Basic
     @Column(name = "password", nullable = false, length = 255)
     private String password;
+
 
     public Long getId() {
         return id;
